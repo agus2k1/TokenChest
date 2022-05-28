@@ -1,0 +1,1803 @@
+body {
+  font-family: 'WorkSans', sans-serif;
+  width: 100%;
+  background-color: #282B2D;
+  color: #e6e6e6;
+  height: 100%;
+  margin: 0;
+  letter-spacing: .02em;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202326;
+  margin-top: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 100vw;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+  position: relative;
+  background-color: #1B1E22;
+  margin: 0;
+  height: 40px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  color: #e6e6e6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo .chestopen {
+  display: none;
+}
+
+.navbar .logo img {
+  width: 41px;
+  height: 30px;
+}
+
+.navbar .logo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  font-size: 20px;
+  font-family: 'WorkSans', sans-serif;
+}
+
+.navbar .logo .token {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.navbar .logo .trove {
+  font-weight: 300;
+}
+
+.navbar .logo:hover .chest {
+  display: none;
+}
+
+.navbar .logo:hover .chestopen {
+  display: block;
+}
+
+.navbar .navbar-icon {
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 2em;
+  cursor: pointer;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav.menu-btn {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 20%;
+  right: 0;
+  top: 0;
+  background: #1B1E22;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav .primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5em;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+nav .primary-nav :hover {
+  color: white;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1em;
+  text-align: right;
+}
+
+.navbar-icon-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+  height: 2em;
+}
+
+.marketplace-container {
+  display: relative;
+}
+
+.marketplace-container .list {
+  display: none;
+  font-family: inherit;
+  background-color: #202326;
+  -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+  height: 570px;
+  width: 382px;
+}
+
+.marketplace-container .hero {
+  height: 570px;
+  width: 100%;
+  background-color: #222528;
+}
+
+.marketplace-container .hero .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #222528;
+}
+
+.marketplace-container .hero .home .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  max-width: 560px;
+}
+
+.marketplace-container .hero .home .container2 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
+}
+
+.marketplace-container .hero .home .container2 .title .token {
+  font-weight: 600;
+  color: #F7C331;
+}
+
+.marketplace-container .hero .home .container2 .title .trove {
+  font-weight: 400;
+  color: #F7C331;
+}
+
+.marketplace-container .hero .home .container2 h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 1.1em;
+}
+
+.marketplace-container .hero .home .container2 .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+}
+
+.marketplace-container .hero .home .container2 .subtitle ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: darkgray;
+  line-height: 1.2rem;
+}
+
+.marketplace-container .hero .home .container2 .subtitle ul li {
+  margin-bottom: 8px;
+}
+
+.marketplace-container .hero .home .container2 .subtitle .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.marketplace-container .hero .home .container2 .subtitle .buttons .green {
+  color: #e6e6e6;
+  background-color: #0D9632;
+  outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 3px;
+  height: 44px;
+  min-width: 130px;
+  min-height: 44px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.marketplace-container .hero .home .container2 .subtitle .buttons .green :hover {
+  color: #0d80df;
+}
+
+.marketplace-container .hero .home .container2 .subtitle .buttons .orange {
+  color: #e6e6e6;
+  background: #E65000;
+  outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 3px;
+  height: 44px;
+  min-width: 130px;
+  min-height: 44px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.marketplace-container .hero .home .container2 .subtitle .buttons .orange :hover {
+  color: #0d80df;
+}
+
+.marketplace-container .hero .home-banner {
+  display: block;
+  width: 100%;
+}
+
+.marketplace-container .hero .home-banner .container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.marketplace-container .hero .home-banner .container3 .banner {
+  margin: 0;
+  padding: 0;
+}
+
+.marketplace-container .hero .home-banner .container3 .banner img {
+  display: inline-block;
+  border: 1px solid #151b22;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 420px;
+  height: 420px;
+}
+
+.marketplace-container .hero .home-banner .container3 .dots {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-top: 15px;
+  margin: 0;
+}
+
+.marketplace-container .hero .home-banner .container3 .dots ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.marketplace-container .hero .home-banner .container3 .dots ul li {
+  margin: 0 10px;
+}
+
+.marketplace-container .hero .home-banner .container3 .dots ul li button {
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: #F7C331;
+}
+
+.marketplace-container .hero .collection-volume {
+  background-color: #282B2D;
+  padding-bottom: 35px;
+}
+
+.marketplace-container .hero .collection-volume .title2 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.marketplace-container .hero .collection-volume .ranking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.marketplace-container .hero .collection-volume .ranking .column1, .marketplace-container .hero .collection-volume .ranking .column2, .marketplace-container .hero .collection-volume .ranking .column3 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 430px;
+}
+
+.marketplace-container .hero .collection-volume .ranking .column2 {
+  display: none;
+}
+
+.marketplace-container .hero .collection-volume .ranking .column3 {
+  display: none;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #202326;
+  width: 290px;
+  padding: 10px 10px;
+  margin: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .position {
+  font-weight: bold;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .logo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 15px;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .logo2 img {
+  height: 35px;
+  width: 35px;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .name-volume {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .name-volume .name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .name-volume .volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkgray;
+  font-weight: 400;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .name-volume .volume .negative {
+  margin-left: 15px;
+  color: #f15d60;
+}
+
+.marketplace-container .hero .collection-volume .ranking .square .name-volume .volume .positive {
+  margin-left: 15px;
+  color: #46c46e;
+}
+
+.marketplace-container .hero .ad {
+  background-color: #282B2D;
+  text-align: center;
+}
+
+.marketplace-container .hero .ad .container4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  max-width: 1400px;
+  padding: 40px 40px;
+  background-color: #222528;
+}
+
+.marketplace-container .hero .ad .container4 .logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marketplace-container .hero .ad .container4 .logo-text img {
+  display: none;
+  margin-right: 0;
+  margin-bottom: 15px;
+  height: 90px;
+}
+
+.marketplace-container .hero .ad .container4 .logo-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.marketplace-container .hero .ad .container4 .logo-text .text .title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.marketplace-container .hero .ad .container4 .logo-text .text .title span {
+  color: #F7C331;
+}
+
+.marketplace-container .hero .ad .container4 .logo-text .text .subtitle {
+  display: none;
+  font-size: 16px;
+  color: darkgrey;
+}
+
+.marketplace-container .hero .ad .container4 .button {
+  margin-top: 15px;
+}
+
+.marketplace-container .hero .ad .container4 .button button {
+  color: #e6e6e6;
+  background-color: #0D9632;
+  outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 3px;
+  height: 44px;
+  min-width: 130px;
+  min-height: 44px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.marketplace-container .hero .cards-listing {
+  background-color: #282B2D;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.marketplace-container .hero .cards-listing .newest-hr {
+  margin: 0;
+  padding: 0;
+}
+
+.marketplace-container .hero .cards-listing .newest-hr .newest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4em;
+}
+
+.marketplace-container .hero .cards-listing .newest-hr .newest img {
+  height: 25px;
+}
+
+.marketplace-container .hero .cards-listing .newest-hr .newest .title {
+  font-size: 1.2em;
+  margin-left: .5em;
+}
+
+.marketplace-container .hero .cards-listing .newest-hr hr {
+  margin: 0.8rem 3rem;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.marketplace-container .hero .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin: 25px 10px;
+}
+
+.marketplace-container .hero .cards .card1, .marketplace-container .hero .cards .card2, .marketplace-container .hero .cards .card3, .marketplace-container .hero .cards .card4, .marketplace-container .hero .cards .card5, .marketplace-container .hero .cards .card6, .marketplace-container .hero .cards .card7, .marketplace-container .hero .cards .card8 {
+  position: relative;
+  background-color: #202326;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 8px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 218px;
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+}
+
+.marketplace-container .hero .cards .card1 .info, .marketplace-container .hero .cards .card2 .info, .marketplace-container .hero .cards .card3 .info, .marketplace-container .hero .cards .card4 .info, .marketplace-container .hero .cards .card5 .info, .marketplace-container .hero .cards .card6 .info, .marketplace-container .hero .cards .card7 .info, .marketplace-container .hero .cards .card8 .info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.marketplace-container .hero .cards .card1 .info .time-amount, .marketplace-container .hero .cards .card2 .info .time-amount, .marketplace-container .hero .cards .card3 .info .time-amount, .marketplace-container .hero .cards .card4 .info .time-amount, .marketplace-container .hero .cards .card5 .info .time-amount, .marketplace-container .hero .cards .card6 .info .time-amount, .marketplace-container .hero .cards .card7 .info .time-amount, .marketplace-container .hero .cards .card8 .info .time-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.marketplace-container .hero .cards .card1 .info .time-amount .time, .marketplace-container .hero .cards .card2 .info .time-amount .time, .marketplace-container .hero .cards .card3 .info .time-amount .time, .marketplace-container .hero .cards .card4 .info .time-amount .time, .marketplace-container .hero .cards .card5 .info .time-amount .time, .marketplace-container .hero .cards .card6 .info .time-amount .time, .marketplace-container .hero .cards .card7 .info .time-amount .time, .marketplace-container .hero .cards .card8 .info .time-amount .time {
+  background-color: #3F4648;
+  position: relative;
+  padding: 2px 5px 3px 5px;
+  font-size: 11px;
+  border-radius: 2px;
+  border: 1px solid #292c29;
+}
+
+.marketplace-container .hero .cards .card1 .info .time-amount .amount, .marketplace-container .hero .cards .card2 .info .time-amount .amount, .marketplace-container .hero .cards .card3 .info .time-amount .amount, .marketplace-container .hero .cards .card4 .info .time-amount .amount, .marketplace-container .hero .cards .card5 .info .time-amount .amount, .marketplace-container .hero .cards .card6 .info .time-amount .amount, .marketplace-container .hero .cards .card7 .info .time-amount .amount, .marketplace-container .hero .cards .card8 .info .time-amount .amount {
+  background-color: #3F4648;
+  position: relative;
+  padding: 2px 5px 3px 5px;
+  font-size: 11px;
+  border-radius: 2px;
+  border: 1px solid #292c29;
+}
+
+.marketplace-container .hero .cards .card1 .info .state, .marketplace-container .hero .cards .card2 .info .state, .marketplace-container .hero .cards .card3 .info .state, .marketplace-container .hero .cards .card4 .info .state, .marketplace-container .hero .cards .card5 .info .state, .marketplace-container .hero .cards .card6 .info .state, .marketplace-container .hero .cards .card7 .info .state, .marketplace-container .hero .cards .card8 .info .state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #E65000;
+  position: relative;
+  margin-left: 6px;
+  margin-top: 3px;
+  padding: 2px 5px 1px 5px;
+  font-size: 11px;
+  border-radius: 2px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.marketplace-container .hero .cards .card1 .box, .marketplace-container .hero .cards .card2 .box, .marketplace-container .hero .cards .card3 .box, .marketplace-container .hero .cards .card4 .box, .marketplace-container .hero .cards .card5 .box, .marketplace-container .hero .cards .card6 .box, .marketplace-container .hero .cards .card7 .box, .marketplace-container .hero .cards .card8 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.marketplace-container .hero .cards .card1 .box img, .marketplace-container .hero .cards .card2 .box img, .marketplace-container .hero .cards .card3 .box img, .marketplace-container .hero .cards .card4 .box img, .marketplace-container .hero .cards .card5 .box img, .marketplace-container .hero .cards .card6 .box img, .marketplace-container .hero .cards .card7 .box img, .marketplace-container .hero .cards .card8 .box img {
+  width: 100%;
+  min-width: 200px;
+}
+
+.marketplace-container .hero .cards .card1 .data, .marketplace-container .hero .cards .card2 .data, .marketplace-container .hero .cards .card3 .data, .marketplace-container .hero .cards .card4 .data, .marketplace-container .hero .cards .card5 .data, .marketplace-container .hero .cards .card6 .data, .marketplace-container .hero .cards .card7 .data, .marketplace-container .hero .cards .card8 .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 8px 15px;
+}
+
+.marketplace-container .hero .cards .card1 .data .name-price, .marketplace-container .hero .cards .card2 .data .name-price, .marketplace-container .hero .cards .card3 .data .name-price, .marketplace-container .hero .cards .card4 .data .name-price, .marketplace-container .hero .cards .card5 .data .name-price, .marketplace-container .hero .cards .card6 .data .name-price, .marketplace-container .hero .cards .card7 .data .name-price, .marketplace-container .hero .cards .card8 .data .name-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.marketplace-container .hero .cards .card1 .data .name-price span, .marketplace-container .hero .cards .card2 .data .name-price span, .marketplace-container .hero .cards .card3 .data .name-price span, .marketplace-container .hero .cards .card4 .data .name-price span, .marketplace-container .hero .cards .card5 .data .name-price span, .marketplace-container .hero .cards .card6 .data .name-price span, .marketplace-container .hero .cards .card7 .data .name-price span, .marketplace-container .hero .cards .card8 .data .name-price span {
+  color: #D6AC57;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.marketplace-container .hero .cards .card1 .data .eth-logo, .marketplace-container .hero .cards .card2 .data .eth-logo, .marketplace-container .hero .cards .card3 .data .eth-logo, .marketplace-container .hero .cards .card4 .data .eth-logo, .marketplace-container .hero .cards .card5 .data .eth-logo, .marketplace-container .hero .cards .card6 .data .eth-logo, .marketplace-container .hero .cards .card7 .data .eth-logo, .marketplace-container .hero .cards .card8 .data .eth-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7a7a7a;
+  font-size: 12px;
+}
+
+.marketplace-container .hero .cards .card1 .data .eth-logo img, .marketplace-container .hero .cards .card2 .data .eth-logo img, .marketplace-container .hero .cards .card3 .data .eth-logo img, .marketplace-container .hero .cards .card4 .data .eth-logo img, .marketplace-container .hero .cards .card5 .data .eth-logo img, .marketplace-container .hero .cards .card6 .data .eth-logo img, .marketplace-container .hero .cards .card7 .data .eth-logo img, .marketplace-container .hero .cards .card8 .data .eth-logo img {
+  width: 9px;
+  height: 9px;
+  padding-bottom: 1px;
+}
+
+.marketplace-container .hero .cards .card3, .marketplace-container .hero .cards .card4, .marketplace-container .hero .cards .card7, .marketplace-container .hero .cards .card8 {
+  display: none;
+}
+
+.marketplace-container .hero .footer2 {
+  background-color: #202326;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0px;
+}
+
+.marketplace-container .hero .footer2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.marketplace-container .hero .footer2 a {
+  text-decoration: none;
+  color: #9d9d9d;
+}
+
+.marketplace-container .hero .footer2 .links {
+  display: block;
+}
+
+.marketplace-container .hero .footer2 .links :hover {
+  color: white;
+}
+
+.marketplace-container .hero .footer2 .links ul {
+  gap: 7.68px;
+}
+
+.marketplace-container .hero .footer2 .links a {
+  font-size: .75em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.marketplace-container .hero .footer2 .contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.marketplace-container .hero .footer2 .contact-icons img {
+  opacity: .5;
+}
+
+.marketplace-container .hero .footer2 .contact-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding-right: 5px;
+}
+
+.marketplace-container .hero .footer2 .contact-icons a :hover {
+  opacity: 1;
+}
+
+.marketplace-container .hero .footer2 .contact-icons .discord {
+  height: 35px;
+  width: 32px;
+}
+
+.marketplace-container .hero .footer2 .contact-icons .twitter {
+  height: 18px;
+  width: 22px;
+}
+
+.marketplace-container .hero .footer2 .contact-icons .email {
+  height: 28px;
+  width: 23px;
+}
+
+.marketplace-container .hero .footer2 .page-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8em;
+  color: #9d9d9d;
+}
+
+.marketplace-container .hero .footer2 .page-footer .immutable {
+  height: 24px;
+  width: 110px;
+  margin-left: 8px;
+  opacity: .5;
+}
+
+.marketplace-container .hero .footer2 .page-footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marketplace-container .hero .footer2 .page-footer a :hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .marketplace-container .hero .ad {
+    background-color: #282B2D;
+    text-align: center;
+  }
+  .marketplace-container .hero .ad .container4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    max-width: 1400px;
+    padding: 40px 40px;
+    background-color: #222528;
+  }
+  .marketplace-container .hero .ad .container4 .logo-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .marketplace-container .hero .ad .container4 .logo-text img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 15px;
+    height: 90px;
+  }
+  .marketplace-container .hero .ad .container4 .logo-text .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .marketplace-container .hero .ad .container4 .logo-text .text .title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .marketplace-container .hero .ad .container4 .logo-text .text .title span {
+    color: #F7C331;
+  }
+  .marketplace-container .hero .ad .container4 .logo-text .text .subtitle {
+    display: block;
+    font-size: 16px;
+    color: darkgrey;
+  }
+  .marketplace-container .hero .ad .container4 .button {
+    margin-top: 15px;
+  }
+  .marketplace-container .hero .ad .container4 .button button {
+    color: #e6e6e6;
+    background-color: #0D9632;
+    outline: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    border-radius: 3px;
+    height: 44px;
+    min-width: 130px;
+    min-height: 44px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    position: relative;
+    background-color: #1B1E22;
+    margin: 0;
+    height: 40px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1002;
+    padding: 0.5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar .container {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  .navbar .navbar-icon {
+    display: none;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 80%;
+    padding: 0;
+  }
+  .navbar nav a {
+    color: white;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav .navbar-icon-exit {
+    display: none;
+  }
+  .navbar nav .primary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+    font-size: 13px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 22px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .navbar nav .primary-nav a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+  }
+  .navbar nav .primary-nav .wallet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar nav .primary-nav .dot {
+    display: inline;
+    background-color: #0D9632;
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    margin-bottom: 1.5px;
+  }
+  .navbar nav .primary-nav :hover {
+    color: rgba(255, 255, 255, 0.678);
+  }
+  .navbar .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    color: #e6e6e6;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .logo .chestopen {
+    display: none;
+  }
+  .navbar .logo img {
+    width: 41px;
+    height: 30px;
+  }
+  .navbar .logo span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30px;
+    font-size: 20px;
+  }
+  .navbar .logo .token {
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .navbar .logo .trove {
+    font-weight: 300;
+  }
+  .navbar .logo:hover .chest {
+    display: none;
+  }
+  .navbar .logo:hover .chestopen {
+    display: block;
+  }
+  .navbar .navbar-icon {
+    display: none;
+  }
+  .navbar .marketplace-container {
+    display: relative;
+  }
+  .navbar .marketplace-container .hero {
+    height: 570px;
+    width: 100%;
+    background-color: #222528;
+  }
+  .navbar .marketplace-container .hero .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    margin: 25px 10px;
+  }
+  .navbar .marketplace-container .hero .cards .card3, .navbar .marketplace-container .hero .cards .card7 {
+    position: relative;
+    background-color: #202326;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 8px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 218px;
+    -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+  }
+  .navbar .marketplace-container .hero .cards .card3 .info, .navbar .marketplace-container .hero .cards .card7 .info {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .info .time-amount, .navbar .marketplace-container .hero .cards .card7 .info .time-amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .info .time-amount .time, .navbar .marketplace-container .hero .cards .card7 .info .time-amount .time {
+    background-color: #3F4648;
+    position: relative;
+    padding: 2px 5px 3px 5px;
+    font-size: 11px;
+    border-radius: 2px;
+    border: 1px solid #292c29;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .info .time-amount .amount, .navbar .marketplace-container .hero .cards .card7 .info .time-amount .amount {
+    background-color: #3F4648;
+    position: relative;
+    padding: 2px 5px 3px 5px;
+    font-size: 11px;
+    border-radius: 2px;
+    border: 1px solid #292c29;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .info .state, .navbar .marketplace-container .hero .cards .card7 .info .state {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #E65000;
+    position: relative;
+    margin-left: 6px;
+    margin-top: 3px;
+    padding: 2px 5px 1px 5px;
+    font-size: 11px;
+    border-radius: 2px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .box, .navbar .marketplace-container .hero .cards .card7 .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .box img, .navbar .marketplace-container .hero .cards .card7 .box img {
+    width: 100%;
+    min-width: 200px;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .data, .navbar .marketplace-container .hero .cards .card7 .data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8px 15px;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .data .name-price, .navbar .marketplace-container .hero .cards .card7 .data .name-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .data .name-price span, .navbar .marketplace-container .hero .cards .card7 .data .name-price span {
+    color: #D6AC57;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .data .eth-logo, .navbar .marketplace-container .hero .cards .card7 .data .eth-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #7a7a7a;
+    font-size: 12px;
+  }
+  .navbar .marketplace-container .hero .cards .card3 .data .eth-logo img, .navbar .marketplace-container .hero .cards .card7 .data .eth-logo img {
+    width: 9px;
+    height: 9px;
+    padding-bottom: 1px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 880px) {
+  .marketplace-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .marketplace-container .list {
+    font-family: inherit;
+    display: block;
+    background-color: #202326;
+    -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+    height: 570px;
+    width: 382px;
+    overflow-y: auto;
+  }
+  .marketplace-container .list .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.2em;
+    margin: 1rem .5rem .5rem .5rem;
+  }
+  .marketplace-container .list .search-wrapper {
+    padding: 0 20px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 0px;
+    top: 0px;
+  }
+  .marketplace-container .list .search-wrapper .input-lupa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    height: 2em;
+    height: calc(2.25rem + 2px);
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #3F4648;
+    border-radius: 4px;
+    max-width: 560px;
+    min-width: 200px;
+  }
+  .marketplace-container .list .search-wrapper img {
+    padding-left: 1rem;
+    width: 14px;
+    height: 13px;
+  }
+  .marketplace-container .list .search-wrapper input {
+    font-size: 15px;
+    padding-left: 1rem;
+    background: #3F4648;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+  }
+  .marketplace-container .list .nft-collection {
+    padding: 0.5rem 1rem;
+  }
+  .marketplace-container .list .nft-collection :hover {
+    opacity: 1;
+    margin-left: .1rem;
+  }
+  .marketplace-container .list .nft-collection a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: .5;
+  }
+  .marketplace-container .list .nft-collection img {
+    height: 32px;
+    width: 32px;
+    margin-right: .5rem;
+  }
+  .marketplace-container .list .nft-collection .cs {
+    width: 24px;
+    margin-left: 6px;
+  }
+  .marketplace-container .list .logo2 .chestopen1 {
+    display: none;
+  }
+  .marketplace-container .list .logo2 :hover {
+    opacity: 1;
+    color: white;
+  }
+  .marketplace-container .list .logo2 :hover .chest1 {
+    display: none;
+  }
+  .marketplace-container .list .logo2 :hover .chestopen1 {
+    display: block;
+  }
+  .marketplace-container .list .logo2 img {
+    width: 30px;
+    margin-right: 10px;
+    opacity: 1;
+  }
+  .marketplace-container .list .logo2 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 16px 0;
+    margin: 30px 8px 20px 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: .5;
+  }
+  .marketplace-container .list .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 0px;
+  }
+  .marketplace-container .list .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .marketplace-container .list .footer a {
+    text-decoration: none;
+    color: #9d9d9d;
+  }
+  .marketplace-container .list .footer .links {
+    display: block;
+  }
+  .marketplace-container .list .footer .links :hover {
+    color: white;
+  }
+  .marketplace-container .list .footer .links ul {
+    gap: 7.68px;
+  }
+  .marketplace-container .list .footer .links a {
+    font-size: .75em;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .marketplace-container .list .footer .contact-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .marketplace-container .list .footer .contact-icons img {
+    opacity: .5;
+  }
+  .marketplace-container .list .footer .contact-icons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding-right: 5px;
+  }
+  .marketplace-container .list .footer .contact-icons a :hover {
+    opacity: 1;
+  }
+  .marketplace-container .list .footer .contact-icons .discord {
+    height: 35px;
+    width: 32px;
+  }
+  .marketplace-container .list .footer .contact-icons .twitter {
+    height: 18px;
+    width: 22px;
+  }
+  .marketplace-container .list .footer .contact-icons .email {
+    height: 28px;
+    width: 23px;
+  }
+  .marketplace-container .list .footer .page-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: .8em;
+    color: #9d9d9d;
+  }
+  .marketplace-container .list .footer .page-footer .immutable {
+    height: 24px;
+    width: 110px;
+    margin-left: 8px;
+    opacity: .5;
+  }
+  .marketplace-container .list .footer .page-footer a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .marketplace-container .list .footer .page-footer a :hover {
+    opacity: 1;
+  }
+  .marketplace-container .hero {
+    height: 570px;
+    width: 100%;
+    overflow-y: auto;
+    background-color: #222528;
+  }
+  .marketplace-container .hero .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .marketplace-container .hero .home .container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 560px;
+  }
+  .marketplace-container .hero .home .container2 .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.5em;
+  }
+  .marketplace-container .hero .home .container2 .title .token {
+    font-weight: 600;
+    color: #F7C331;
+  }
+  .marketplace-container .hero .home .container2 .title .trove {
+    font-weight: 400;
+    color: #F7C331;
+  }
+  .marketplace-container .hero .home .container2 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+    letter-spacing: .02em;
+    line-height: 1.2;
+    font-size: 2em;
+  }
+  .marketplace-container .hero .home .container2 .subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 10px;
+  }
+  .marketplace-container .hero .home .container2 .subtitle ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: darkgray;
+    line-height: 1.2rem;
+  }
+  .marketplace-container .hero .home .container2 .subtitle ul li {
+    margin-bottom: 8px;
+  }
+  .marketplace-container .hero .home .container2 .subtitle .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 15px;
+  }
+  .marketplace-container .hero .home .container2 .subtitle .buttons .green {
+    color: #e6e6e6;
+    background-color: #0D9632;
+    outline: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    border-radius: 3px;
+    height: 44px;
+    min-width: 130px;
+    min-height: 44px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .marketplace-container .hero .home .container2 .subtitle .buttons .green :hover {
+    color: #0d80df;
+  }
+  .marketplace-container .hero .home .container2 .subtitle .buttons .orange {
+    color: #e6e6e6;
+    background: #E65000;
+    outline: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    border-radius: 3px;
+    height: 44px;
+    min-width: 130px;
+    min-height: 44px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .marketplace-container .hero .home .container2 .subtitle .buttons .orange :hover {
+    color: #0d80df;
+  }
+  .marketplace-container .hero .cards .card3, .marketplace-container .hero .cards .card7 {
+    display: none;
+  }
+  .marketplace-container .hero .footer2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 950px) {
+  .marketplace-container .hero .collection-volume .ranking .column2 {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1030px) {
+  .marketplace-container .hero .cards .card3, .marketplace-container .hero .cards .card7 {
+    position: relative;
+    background-color: #202326;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 8px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 218px;
+    -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1250px) {
+  .marketplace-container .hero .cards .card4, .marketplace-container .hero .cards .card8 {
+    position: relative;
+    background-color: #202326;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 8px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 218px;
+    -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1300px) {
+  .marketplace-container .hero .collection-volume .ranking .column3 {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+/*# sourceMappingURL=main.css.map */
